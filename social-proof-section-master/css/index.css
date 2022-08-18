@@ -95,7 +95,6 @@ body {
 .bottom-section {
     display: grid;
     grid-template-areas: 'cust-1 cust-2 cust-3';
-    /* grid-template-rows: 270px; */
     grid-area: bottom-section;
     margin-top: 50px;
 }
@@ -156,7 +155,8 @@ body {
     border-radius: 8px;
     margin-top: 20px;
     height: 270px;
-    margin-left: -10px;
+    margin-left: -20px;
+    padding: 8px
 }
 
 .cust-3 {
@@ -166,5 +166,5 @@ body {
     border-radius: 8px;
     margin-top: 40px;
     height: 270px;
-    margin-left: -10px;
+    margin-left: -20px;
 }
