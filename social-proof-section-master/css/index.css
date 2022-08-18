@@ -26,7 +26,7 @@ body {
 .product {
     grid-area: product;
     width: 650px;
-    height: 450px;
+    /* height: 450px; */
 }
 
 .prod-head {
@@ -52,8 +52,9 @@ body {
 .rating {
     grid-area: rating;
     width: 650px;
-    height: 450px;
+    /* height: 450px; */
     margin-top: 80px;
+    margin-left: -10px;
 }
 
 .review-1,
@@ -62,15 +63,16 @@ body {
     background-color: hsl(300, 24%, 96%);
     margin: 20px;
     padding: 18px;
-    width: 450px;
+    width: 470px;
+    border-radius: 8px;
 }
 
 .review-2 {
-    margin-left: 50px;
+    margin-left: 67px;
 }
 
 .review-3 {
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 .review-desc {
@@ -91,7 +93,78 @@ body {
 }
 
 .bottom-section {
+    display: grid;
+    grid-template-areas: 'cust-1 cust-2 cust-3';
+    /* grid-template-rows: 270px; */
     grid-area: bottom-section;
-    width: 500px;
-    height: 450px;
+    margin-top: 50px;
+}
+
+.cust-1 {
+    grid-area: cust-1;
+    width: 380px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    height: 270px;
+}
+
+.cust-head {
+    display: grid;
+    grid-template-areas: 'img cust';
+    grid-template-columns: 80px 200px;
+    margin: 30px;
+    margin-top: 40px;
+}
+
+.cust-head img {
+    grid-area: img;
+    border-radius: 50%;
+    size: 50px;
+    width: 50px;
+}
+
+.cust-name {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    text-shadow: 0.5px 0 hsl(0, 0%, 100%);
+}
+
+.verfied {
+    color: hsl(333, 80%, 67%);
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.cust-head .cust-name-buyer {
+    grid-area: cust;
+    margin-top: -10px;
+}
+
+.cust-review {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0 40px 30px 30px;
+    margin-top: -20px;
+    /* text-shadow: 0.5px 0 hsl(0, 0%, 100%); */
+}
+
+.cust-2 {
+    grid-area: cust-2;
+    width: 380px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    margin-top: 20px;
+    height: 270px;
+    margin-left: -10px;
+}
+
+.cust-3 {
+    grid-area: cust-3;
+    width: 380px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    margin-top: 40px;
+    height: 270px;
+    margin-left: -10px;
 }
